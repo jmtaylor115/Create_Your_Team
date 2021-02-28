@@ -85,13 +85,46 @@ function Intern(name, id, email, school) {
     }
 }
 
-function 
-inquire.prompt({
+function fillData() {
+    inquire.prompt({
+        type: 'input',
+        name: 'position',
+        message: 'What is your position?'
+    })
+    .then(answers => {
+        if(answers === Manager || answers === manager) {
+            inquire.prompt({
+                type: 'input',
+                name: 'name',
+                message: 'What is their name?'
+            },
+            {
+                type: 'input',
+                name: 'id',
+                message: 'What is their id number?'
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: 'What is their email address?'
+            },
+            {
+                type: 'input', 
+                name: 'officeNumber',
+                message: 'What is their office number?'
+            })
+        }
+        else {
+            console.log("please contact manager to fill out information")
+        }
+    }
+    
+    ,inquire.prompt(
     {
         type: 'input',
         name: 'position',
         message: 'What is your job position?'
-    }
+    },
     {
         type: 'input',
         name: 'name',
@@ -122,4 +155,5 @@ inquire.prompt({
         name: 'school',
         message: 'What is their schools name?'
     }
-})
+));
+};
