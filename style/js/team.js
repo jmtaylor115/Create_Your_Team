@@ -84,3 +84,42 @@ function Intern(name, id, email, school) {
         return employee;
     }
 }
+
+function 
+inquire.prompt({
+    {
+        type: 'input',
+        name: 'position',
+        message: 'What is your job position?'
+    }
+    {
+        type: 'input',
+        name: 'name',
+        message: 'What is their name?'
+    },
+    {
+        type: 'input',
+        name: 'id',
+        message: 'What is their id number?'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is their email address?'
+    },
+    {
+        type: 'input', 
+        name: 'officeNumber',
+        message: 'What is their office number?'
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is their GitHub username?'
+    },
+    {
+        type: 'input',
+        name: 'school',
+        message: 'What is their schools name?'
+    }
+})
