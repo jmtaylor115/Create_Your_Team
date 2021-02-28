@@ -1,0 +1,16 @@
+{
+    "name": "index",
+    "version": "1.0.0",
+    "description": "Prompt user to answer a set of questions and generate information and display it on screen",
+    "main": "team.js",
+
+    "scripts": {
+        "test": "jest"
+    },
+    "keyowrds": [],
+    "author": "Jared Taylor",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^26.0.1"
+    }
+}
